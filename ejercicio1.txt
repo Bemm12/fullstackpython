@@ -1,1 +1,42 @@
-git 
+# Sitúese en la carpeta en la que desee crear el repositorio.
+cd C:\Users\Beatriz\Desktop\Bootcamp Java\M2\EjercicioIndividual7
+
+# Cree una carpeta, y dentro de la misma un repositorio, ambos con el nombre fullstackpython
+mkdir fullstackpython
+cd fullstackpython
+git init
+
+# Genere una consulta que permite verificar el estado del repositorio
+git status
+
+# Cree un documento de texto de nombre contenidos.txt, que posea el siguiente contenido:
+Módulo 1: Programación en Python
+Módulo 2: Lenguaje de Consultas a una Base de Datos
+Módulo 3: Fundamentos de Desarrollo Web" 
+> contenidos.txt
+
+# Validar que el contenido ingresado esté efectivamente cargado. Verifique además el tamaño del archivo y sus permisos de acceso.
+cat contenidos.txt
+ls -lh contenidos.txt
+
+# Añada el archivo al repositorio
+git add contenidos.txt
+
+# Aplique los cambios realizados sobre el repositorio, usando como mensaje “Primera versión del temario subida a repositorio”
+git commit -m "Primera versión del temario subida a repositorio"
+
+# Añada una nueva línea al final del archivo, con el contenido “Módulo 2: Desarrollo de aplicaciones web dinámicas con Python”.
+echo "Módulo 4: Desarrollo de aplicaciones web dinámicas con Python" >> contenidos.txt
+
+# Verificar qué cambios existen en el repositorio que deban ser almacenados
+git status
+
+# Aplicar nuevamente los cambios en el repositorio, esta vez con el mensaje “Versión actualizada del contenido”
+git add contenidos.txt
+git commit -m "Versión actualizada del contenido"
+
+# Ver el registro de cambios creados sobre el repositorio
+git log
+
+# Finalmente, validar el estado del repositorio
+git status
