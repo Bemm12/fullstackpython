@@ -26,7 +26,7 @@ git add contenidos.txt
 git commit -m "Primera versión del temario subida a repositorio"
 
 # Añada una nueva línea al final del archivo, con el contenido “Módulo 2: Desarrollo de aplicaciones web dinámicas con Python”.
-echo "Módulo 4: Desarrollo de aplicaciones web dinámicas con Python" >> contenidos.txt
+ "Módulo 4: Desarrollo de aplicaciones web dinámicas con Python" >> contenidos.txt
 
 # Verificar qué cambios existen en el repositorio que deban ser almacenados
 git status
